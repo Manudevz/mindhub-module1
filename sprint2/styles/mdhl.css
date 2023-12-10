@@ -5,6 +5,9 @@
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
 }
+.mdhlcss2_images {
+  display: none;
+}
 
 html {
   font-size: 62.5%;
@@ -141,8 +144,9 @@ h1 {
 }
 .page__section-1 p,
 a {
-  font-size: 1.8rem;
+  font-size: 1.3rem;
   max-width: 84rem;
+  margin-top: 0.5rem;
 }
 
 /* about and special styles */
@@ -154,6 +158,8 @@ a {
 .page__section-1 a {
   text-decoration: none;
   color: #98b43c;
+  font-size: 1.8rem;
+  font-weight: 800;
 }
 
 /* current page styles */
