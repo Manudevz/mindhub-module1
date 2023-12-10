@@ -3,20 +3,11 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Courier New", Courier, monospace;
   font-family: "Roboto", sans-serif;
 }
 
 html {
   font-size: 62.5%;
-  background: #fff;
-  background: linear-gradient(
-    10deg,
-    rgba(0, 0, 0, 0.903) 100%,
-    rgb(0, 0, 0) 100%,
-    rgba(10, 8, 28, 0.22) 26%,
-    rgba(0, 0, 0, 0) 97%
-  );
 }
 main {
   position: relative;
@@ -24,15 +15,41 @@ main {
 
 body {
   position: relative;
+  background-size: cover;
+  background-image: url("https://e0.pxfuel.com/wallpapers/781/168/desktop-wallpaper-orange-and-white.jpg");
+  background-size: cover;
+  object-fit: cover;
 }
 
 /* header */
 
 .page__header {
   position: absolute;
-  height: 40vh;
-  background-color: red;
   width: 100vw;
+  height: 15vh;
+  top: 0;
+  background-color: rgb(32, 30, 28);
+}
+
+.page__header p {
+  position: absolute;
+  top: 18rem;
+  right: 6.1rem;
+  padding: 1.5rem 1rem;
+  color: rgb(255, 255, 255);
+  font-weight: 800;
+  background-color: rgb(46, 44, 44);
+  font-weight: 800;
+  font-size: 1.9rem;
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+
+.page__header__logo img {
+  position: relative;
+  left: 1.3rem;
+  top: 0.5rem;
 }
 
 .navbar {
@@ -40,13 +57,152 @@ body {
   right: 20rem;
 }
 
-.navbar {
+h1 {
   position: absolute;
-  right: 20rem;
+  top: 9.2rem;
+  width: 100vw;
+  padding: 2rem 0rem 2rem 10rem;
+  background: rgb(214, 0, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 72, 0, 0.718) 11%,
+    rgba(0, 0, 0, 0.245) 11%,
+    rgba(29, 27, 27, 0.926) 12%
+  );
+  color: #fff;
+  font-size: 2.6rem;
+}
+
+.page__header__logo img {
+  width: 8rem;
+  height: 8rem;
 }
 
 /* section */
 
+.mdhlcss2_images {
+  box-shadow: 0px 0px 24px rgba(88, 83, 83, 0.935);
+  background: rgba(171, 159, 172, 0.297);
+  width: 30vw;
+  height: calc(100vh - 28vh);
+  position: absolute;
+  background-size: cover;
+  left: 0rem;
+  top: 17rem;
+  text-align: center;
+  z-index: -1;
+}
+
+.mdhlcss2_images img {
+  position: absolute;
+  width: 80%;
+  height: 40%;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+.mdhlcss2_images img:nth-child(1) {
+  left: 3.4rem;
+  top: 3rem;
+  animation: animateEntrance 800ms ease-out forwards;
+}
+.mdhlcss2_images img:nth-child(2) {
+  left: 3.4rem;
+  top: 22rem;
+  animation: animateEntrance 1.2s ease-out forwards;
+}
+
+@keyframes animateEntrance {
+  0% {
+    left: -10rem;
+  }
+}
+
 .page__section-1 {
   position: absolute;
+  top: 20rem;
+  right: 6rem;
+  width: 60vw;
+  padding: 2rem 4rem;
+  max-height: 80vh;
+  background: rgba(171, 159, 172, 0.297);
+  border-radius: 1.6rem;
+  border-top-right-radius: 0rem;
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: #313030;
+  box-shadow: 0 0 14px rgba(88, 83, 83, 0.935);
+}
+
+.page__section-1 article:nth-child(n + 2) {
+  margin-top: 2.2rem;
+}
+
+article {
+  background: rgb(254, 123, 71);
+  background: linear-gradient(
+    90deg,
+    rgba(254, 123, 71, 1) 1%,
+    rgba(254, 123, 71, 1) 2%,
+    rgba(232, 209, 230, 0.7175245098039216) 2%,
+    rgba(189, 175, 191, 0.7175245098039216) 100%
+  );
+  padding: 1rem;
+  width: 80%;
+  border-radius: 1rem;
+  box-shadow: 0 0 5px rgba(32, 28, 28, 0.635);
+  transition: 200ms ease;
+}
+article:hover {
+  transform: scale(1.02);
+}
+
+.page__section-1 h3 {
+  color: rgb(83, 83, 83);
+  padding-left: 2rem;
+  margin-bottom: 0.5rem;
+}
+.page__section-1 p,
+a {
+  font-size: 1.3rem;
+  max-width: 84rem;
+  padding-left: 2rem;
+}
+
+/* about and special styles */
+
+.page__section-1 h4 {
+  padding-left: 2rem;
+  margin-bottom: 1rem;
+}
+
+.page__section-1 a {
+  text-decoration: none;
+  color: rgba(255, 72, 0, 0.718);
+  font-weight: 800;
+  padding-left: 0;
+  font-size: 1.8rem;
+}
+
+/* current page styles */
+
+.navbar li {
+  display: inline-block;
+  position: relative;
+  top: 3.5rem;
+  list-style: none;
+}
+
+.navbar li a {
+  padding: 20px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 800;
+}
+
+a.current:link,
+a.current:visited {
+  color: #fff;
+  background-color: #201e1c;
+  border: 2px solid #82828295;
+  border-radius: 1.2rem;
 }

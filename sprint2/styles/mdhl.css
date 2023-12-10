@@ -3,7 +3,6 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Courier New", Courier, monospace;
   font-family: "Roboto", sans-serif;
 }
 
@@ -31,13 +30,13 @@ h1 {
   font-size: 4.4rem;
 }
 
-/* header */
+/* header styles*/
 .page__header {
   background-color: red;
   position: relative;
   height: 50vh;
   width: 100vw;
-  background-image: url("/assets/images/design1_image2.jpg");
+  background-image: url("../assets/images/design1_image2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -85,7 +84,12 @@ h1 {
   }
 }
 
-/* navbar */
+.page__header__logo img {
+  width: 12rem;
+  height: 12rem;
+}
+
+/* navbar styles*/
 
 .navbar {
   height: 40vh;
@@ -114,9 +118,11 @@ h1 {
   font-size: 1.6rem;
   display: block;
   padding: 2rem 0rem;
+  text-align: left;
+  padding-left: 10px;
 }
 
-/* sections */
+/* sections styles*/
 
 .page__section-1 {
   color: #fff;
@@ -139,7 +145,7 @@ a {
   max-width: 84rem;
 }
 
-/* about special styles */
+/* about and special styles */
 
 .page__section-1 h4 {
   margin-bottom: 1.6rem;
@@ -150,7 +156,7 @@ a {
   color: #98b43c;
 }
 
-/* current page  */
+/* current page styles */
 
 a.current:link,
 a.current:visited {
