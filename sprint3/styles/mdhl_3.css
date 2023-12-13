@@ -166,7 +166,7 @@ main > div > p {
 	top: -2rem;
 	left: 2rem;
 	padding: 1.4rem 2rem;
-	border-radius: 1rem;
+	border-radius: 0.2rem;
 	background-color: #201e1cb1;
 	margin-bottom: 0.5rem;
 	display: inline-block;
