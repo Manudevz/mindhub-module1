@@ -261,6 +261,9 @@ article {
 	border-radius: 1rem;
 	box-shadow: 0 0 5px rgba(32, 28, 28, 0.635);
 	transition: 200ms ease;
+	min-height: 10rem;
+	font-weight: 500;
+	font-size: 2rem;
 }
 article:hover {
 	transform: scale(1.02);
